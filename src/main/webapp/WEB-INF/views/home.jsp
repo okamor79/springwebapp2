@@ -24,7 +24,7 @@
 <h1>Hello world</h1>
     <ul>
         <li>1. <a href="${pageContext.request.contextPath}/profile">Show Profile</a></li>
-        <li>2. <a href="${pageContext.request.contextPath}/register">Show Registration form</a></li>
+        <li>2. <a href="${pageContext.request.contextPath}/student">Show Student panel</a></li>
     </ul>
 </div>
 
