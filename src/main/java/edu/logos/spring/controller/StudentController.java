@@ -18,7 +18,7 @@ public class StudentController {
 
     @GetMapping
     public String studentPanel() {
-        return "student/panel";
+        return "redirect:/student/students";
     }
 
     @GetMapping("/add")
