@@ -20,4 +20,11 @@ public class Student extends BaseEntity{
     private String lastName;
 
     private int age;
+
+    @Column(name = "lang_prog")
+    private String progLang;
+
+    private String country;
+
+    private String[] operationSystem;
 }

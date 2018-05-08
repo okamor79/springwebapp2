@@ -1,5 +1,8 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
 <c:set value="${pageContext.request.contextPath}" var="rootURL" />
+
 <c:set value="
 <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #002752\">
 <a class=\"navbar-brand\" href=\"#\">Navbar</a>
@@ -22,6 +25,7 @@
             <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                 <a class=\"dropdown-item\" href=\"${rootURL}/student/add\">Add new Student</a>
                 <a class=\"dropdown-item\" href=\"${rootURL}/student/students\">List students</a>
+                <a class=\"dropdown-item\" href=\"${rootURL}/student/add-spring-form\">Spring Add</a>
                 <div class=\"dropdown-divider\"></div>
                 <a class=\"dropdown-item\" href=\"#\">Something else here</a>
             </div>

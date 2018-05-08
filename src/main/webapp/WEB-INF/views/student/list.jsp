@@ -41,6 +41,15 @@ ${nav_bar}
             <td>${student.firstName}</td>
             <td>${student.lastName}</td>
             <td class="text-center">${student.age}</td>
+            <td class="text-center">${student.country}</td>
+            <td class="text-center">${student.progLang}</td>
+            <%--<td class="text-center">${student.operationSystem}</td>--%>
+            <td>
+                <c:forEach items="${student.operationSystem}" var="os">
+                    ${os}<br>
+                </c:forEach>
+            </td>
+            <td><a href="${rootURL}/student/edit/${student.id}">Edit</a></td>
         </tr>
         </c:if>
     </c:forEach>
